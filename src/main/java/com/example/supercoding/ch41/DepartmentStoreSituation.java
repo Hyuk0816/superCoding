@@ -1,27 +1,27 @@
-package com.example.supercoding.ch34;
+package com.example.supercoding.ch41;
+
+import static java.lang.Thread.sleep;
 
 public class DepartmentStoreSituation {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         //전제 상황
         int price = 10_000;
         Staff staff = new Staff();
         staff.setSalesAmount(1_000_000);
 
-        Customer customer =  new VIPCustomer("오현지");
 
-        Customer customer1 = new GoldCustomer("김선민");
+        String hello = "Hello";
+        String hello1 = new String("Hello");
+        String hello2 = new String("Hello");
+        String hello3 = new String("Hello");
 
-        Customer customer2 = new Customer("강지현");
-
-        Customer customer3 = new GoldCustomer("아이유");
-
-        Customer cusotmer4 = new VIPCustomer("전지현");
+        
 
         Customer[] customerQueue = {
             new Customer("임준배"), new Customer("여태수"), new VIPCustomer("김재혁"),
             new VIPCustomer("김태민"), new Customer("김현우"), new VIPCustomer("정혜은")
-           , new Customer("김혜민")
+           , new Customer("김혜민"), new VIPCustomer("강지현")
         };
 
         //시나리오
@@ -33,6 +33,10 @@ public class DepartmentStoreSituation {
         }
 
         staff.printMySalesAmount();
+
+        while(true){
+            sleep(100);
+        }
 
 
     }

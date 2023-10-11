@@ -12,6 +12,8 @@ public class DepartmentStoreSituation {
 
         Customer customer1 = new GoldCustomer("김선민");
 
+
+
         Customer[] customerQueue = {
             new Customer("임준배"), new Customer("여태수"), new VIPCustomer("김재혁"),
             new VIPCustomer("김태민"), new Customer("김현우"), new VIPCustomer("정혜은")

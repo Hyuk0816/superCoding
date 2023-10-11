@@ -1,13 +1,10 @@
-package com.example.supercoding.ch40;
+package com.example.supercoding.ch41;
 
 public class GoldCustomer extends Customer {
 
 
     private double discountRatio;
 
-    static {
-        System.out.println("gold 클래스가 로드!");
-    }
 
 
     @Override

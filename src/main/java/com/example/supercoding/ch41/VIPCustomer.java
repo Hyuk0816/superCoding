@@ -1,4 +1,4 @@
-package com.example.supercoding.ch40;
+package com.example.supercoding.ch41;
 
 public class VIPCustomer extends Customer {
 
@@ -9,9 +9,7 @@ public class VIPCustomer extends Customer {
     private String agentID;
     private double discountRatio;
 
-    static {
-        System.out.println("VIP 클래스가 로드");
-    }
+
 
     //행위;
     @Override

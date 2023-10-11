@@ -1,13 +1,13 @@
-package com.example.supercoding.ch40;
+package com.example.supercoding.ch42;
+
+
 
 public class Customer {
     //속성
 
     static int serialNums = 1;
 
-    static {
-        System.out.println("Customer 클래스가 로딩!");
-    }
+
 
     protected String customerID;
     protected String name;
@@ -33,6 +33,8 @@ public class Customer {
         System.out.printf("Customer(customerId = %s, name = %s, customerGrade = %s. bonusPoint = %s\n" ,
                 this.customerID, this.name, this.customerGrade, this.bonusPoint);
     }
+
+
 
 
 
