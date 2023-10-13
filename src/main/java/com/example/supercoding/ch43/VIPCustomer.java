@@ -1,8 +1,6 @@
-package com.example.supercoding.ch34;
+package com.example.supercoding.ch43;
 
-import java.sql.Struct;
-
-public class VIPCustomer extends Customer{
+public class VIPCustomer extends Customer {
 
     //속성
 
@@ -10,6 +8,10 @@ public class VIPCustomer extends Customer{
 
     private String agentID;
     private double discountRatio;
+
+    static {
+        System.out.println("VIP 클래스가 로드");
+    }
 
     //행위;
     @Override
@@ -24,7 +26,7 @@ public class VIPCustomer extends Customer{
 
     }
 
-    public VIPCustomer(String name){
+    VIPCustomer(String name){
         super();
         this.customerID = "VIP" + serialNums++;
         this.name = name;
@@ -44,5 +46,14 @@ public class VIPCustomer extends Customer{
         super.printMyInfo();
     }
 
-
+    @Override
+    public String toString() {
+        return "VIPCustomer{" +
+                "agentID='" + agentID + '\'' +
+                ", customerID='" + customerID + '\'' +
+                ", name='" + name + '\'' +
+                ", customerGrade='" + customerGrade + '\'' +
+                ", bonusPoint=" + bonusPoint +
+                '}';
+    }
 }
