@@ -21,13 +21,13 @@ public class PTMember {
         this.gender = gender;
     }
 
+
     public void setID(String ID) {
         if(ID == null){throw new IDFormatException("ID는 Null이 될 수 없읍");}
         if(ID.length() < 8 || ID.length()>20 ){throw new IDFormatException("ID는 8자초과 20자 미만 으로 해주십쇼");}
 
         this.ID = ID;
     }
-
     @Override
     public String toString() {
         return "PTMember{" +
