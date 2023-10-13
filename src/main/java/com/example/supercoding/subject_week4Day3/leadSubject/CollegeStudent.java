@@ -32,4 +32,5 @@ abstract class CollegeStudent {
         this.name = name;
         this.gpa = gpa;
     }
+
 }
