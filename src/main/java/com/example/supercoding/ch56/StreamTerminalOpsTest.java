@@ -54,7 +54,7 @@ public class StreamTerminalOpsTest {
 
         //reduce로 소모 값구하기
         int result = integers.stream().reduce(0,(int1, int2) -> int1 + int2); //그냥 요소 싹 다 더하는것!
-        System.out.println("result 값: " + result); //왜 쓰이는 걸까,,? 
+        System.out.println("result 값: " + result); //왜 쓰이는 걸까,,?
 
 
 
