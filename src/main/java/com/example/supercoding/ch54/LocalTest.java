@@ -18,7 +18,7 @@ public class LocalTest {
         Walkable anonymousWalk = new Walkable() {
             @Override
             public void walk() {
-                //i =200; 하지만 데이터 변경은 불가능함! 
+                //i =200; 하지만 데이터 변경은 불가능함!
                 System.out.println("익명 이너클래스 외부 클래스의 변수를 쓸 수 있을까? " + i);
                 System.out.println("익명이너클래스 걷는거 성공");
             }
