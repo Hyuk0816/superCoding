@@ -2,6 +2,8 @@ package com.example.supercoding.ch59;
 
 
 
+import com.example.supercoding.ch58.Customer;
+
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;

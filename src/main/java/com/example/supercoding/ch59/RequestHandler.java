@@ -1,5 +1,7 @@
 package com.example.supercoding.ch59;
 
+import com.example.supercoding.ch58.Customer;
+
 import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.OutputStream;
@@ -14,7 +16,7 @@ public class RequestHandler implements Runnable{
 
     private List<com.example.supercoding.ch58.Customer> customerList; //대기명단
 
-    public RequestHandler(Socket clientSocket, List<com.example.supercoding.ch58.Customer> customerList) {
+    public RequestHandler(Socket clientSocket, List<Customer> customerList) {
         this.clientSocket = clientSocket;
         this.customerList = customerList;
     }
@@ -31,8 +33,8 @@ public class RequestHandler implements Runnable{
             OutputStream serverOutputStream = clientSocket.getOutputStream();
             PrintWriter printWriter = new PrintWriter(serverOutputStream, true);
 
-            Customer customer = (Customer) objectInputStream.readObject();
-            ListUtils.addList(customerList);
+            com.example.supercoding.ch58.Customer customer = (com.example.supercoding.ch58.Customer) objectInputStream.readObject();
+            ListUtils.addList(customerList, customer);
             customerList.add(customer);
             System.out.println("Thread" + Thread.currentThread().getName() + ": " + customer + "가 대기명단에 추가되었습니다.");
 
